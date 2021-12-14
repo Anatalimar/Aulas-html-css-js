@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+        Trabalhando com tag's de Tabelas:
+        <table></table> = Definição a criação da tabela.
+        <tr></tr> = Definição para criação de linhas na tabela.
+        <td></td> = Definição para criação de colunas na tabela.
+
+        Propriedades:
+        BORDER - Especifica a largura da linha das bordas que separam as células da tabela.
+        CELLSPACING - Especifica o espaçamento, em pixels, entre as células.
+        CELLPADDING - Especifia o espaçamento, em pixels, entre o conteúdo e a borda da célula.
+        WIDTH - Especifica a largura da tabela em pixels ou em porcentagem.
+        ALIGN = left | center | right - Define o alinhamento da tabela na página.
+        BGCOLOR - Especifica a cor de fundo de toda a tabela.
+        BORDERCOLOR - define a cor de borda da tabela. Só funciona se algum valor diferente de zero tiver sido atribuído ao parâmetro BORDER.
+        BACKGROUND = URL ou arquivo - Define uma imagem como plano de fundo para toda a tabela.
+
+    -->
+    <table border="1" cellspacing="0" align="center" bordercolor="red"> <!--Definindo a criação da tabela-->
+        <tr> <!--Linha 01-->
+            <td>Celular (linha1 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha1 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha1 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+        <tr> <!--Linha 02-->
+            <td>Celular (linha2 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha2 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha2 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+        <tr> <!--Linha 03-->
+            <td>Celular (linha3 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha3 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha3 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+    </table> <!--Finalização da Tabela-->
+
+    <!--
+        Propriedades do marcador <TR>:
+        ALIGN = left | right | center | justify - Especifica o alinhamento horizontal do conteúdo das células.
+        VALIGN = top | middle | bottom | baseline - Especifica o alinhamento vertical do conteúdo das células.
+        BGCOLOR - Especifica a cor de fundo para a linha.
+        BORDERCOLOR - Define a cor de borda das células da linha.
+        BACKGROUND = nome ou URL do arquivo - Define uma imagem de fundo da linha.
+    -->
+
+    <!--
+        Propriedades do marcador <TD>:
+        ALIGN= left | right | center | justify - Especifica o alinhamento horizontal do conteúdo da célula.
+        VALIGN = top | middle | bottom | baseline - Especifica o alinhamento vertical do conteúdo da célula.
+        NOWRAP - Evita a quebra de linha do conteúdo da célula.
+        COLSPAN = número - Este parâmetro permite aumentar a largura de uma célula fazendo com que ela ocupe colunas adjacentes. Nele deve ser especificado o número de colunas que a célula irá ocupar.
+        ROWSPAN = número - Este parâmetro permite aumentar a altura de uma célula fazendo com que ela ocupe linhas adjacentes. Nele deve ser especificado o número de linhas que a célula irá ocupar.
+        WIDTH = número | número% - Especifica a largura da célula em pixels ou em porcentagem relativa à largura da tabela.
+        BGCOLOR = cor - Especifica a cor de fundo da célula.
+        BORDERCOLOR = cor - Define a cor de borda da célula.
+        BACKGROUND = nome ou URL do arquivo - Define uma imagem como plano de fundo para a célula.
+
+    -->
+    <br>
+    <br>
+    <!--
+        Tag <caption></caption> - Definir legenda a tabela, devendo ser inserida logo após a tag <table>.
+            Propriedade principal:
+            Align = Top e bottom
+    -->
+    <table border="1" cellspacing="0" align="center" bordercolor="red"> <!--Definindo a criação da tabela-->
+    <caption align="bottom">Legenda Definida para a tabela.</caption>
+        <tr> <!--Linha 01-->
+            <td>Celular (linha1 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha1 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha1 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+        <tr> <!--Linha 02-->
+            <td>Celular (linha2 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha2 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha2 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+        <tr> <!--Linha 03-->
+            <td>Celular (linha3 - Coluna1)</td> <!--Coluna 01-->
+            <td>Celular (linha3 - Coluna2)</td> <!--Coluna 02-->
+            <td>Celular (linha3 - Coluna3)</td> <!--Coluna 03-->
+        </tr>
+    </table> <!--Finalização da Tabela-->
+</body>
+</html>
