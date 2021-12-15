@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Aprendo sobre Formulário</title>
+</head>
+<body>
+    <!--
+         <FORM> e </FORM> são usadas para dfinir um formulário.
+         Propriedade:
+         ACTION = URL - Especifica o local (URL) do servidor e do programa CGI que vai processar os dados do formulário
+         METHOD = "Método de troca de dados" - Indica o método usado pelo servidor para receber os dados do formulário
+            GET - As informações são enviadas como se fizessem parte da URL.
+            POST - As informações são enviadas num bloco de dados separado da URL. É o método mais utilizado.
+    -->
+    <form>
+
+    </form>
+
+    <!--
+        Marcador INPUT - define um campo de entrada de dados, onde o usuário digita as informações requeridas pelo formulário. Cada campo de um formualário atribui seu conteúdo a uma variável que possui nome e tipo especifico.
+        Parametros:
+        TYPE= "Tipo de variável" - Especifica o tipo de dado para a variável. Suas opções possíveis são:
+
+            TEXT - Aceita dados do tipo caractere. É o tipo de variável mais usado para a digitação de um campo de texto com tamanho conhecido. Por padrão a caixa de texto terá largua de 20 caracteres.
+            PASSWORD  - Aceita dados do tipo caractere. Funciona exatamente como uma variável do tipo TEXT, porém, exibe um asterisco no lugar de cada caractere digitado para impedir sua visualização na tela.
+            RADIO - Aceita campos do tipo sim/não. Permite a exibição de várias opções, mas só aceita que uma delas seja escolhida
+            CHECKBOX - Aceita campos do tipo sim/não. Permite a exibição de várias opções e aceita que o usuário escolha várias delas.
+            SUBMIT - Cria um botão que envia o conteúdo do formulário ao ser pressionado. Os dados são enviados para a URL especificada no parâmetro ACTION e de acordo com o método escolhido no parâmetro METHOD do comando FORM.
+            RESET - Cria um botão que, ao ser pressionado, possibilita ao usuário apagar e restabelecer o valor padrão para todos os campos do formulário de uma única vez.
+            HIDDEN - Define um campo invisível, cujo conteúdo é enviado junto com os demais.
+        
+        NAME="nome" - Nome da variável que receberá o conteúdo do campo. Este parâmtero é essencial na sintaxe de criação de qualquer campo de entrada de dados, seja qual for o tipo de variável escolhido.
+        
+        VALUE="valor" - Permite definir um conteúdo prévio para campos dos tipos TEXT e PASSWORD, ou seja, um texto que aparecerá escrito na caixa de digitação quando o formulário for aberto. Para os campos do tipo CHECKBOX ou RADIO representa o valor que será atribuído à variável se a opção for marcada. Para os campos SUBMIT e RESET indica o texto que aparece no botão. Este parâmetro é obrigatório apenas para variáveis dos tipos CHECKBOX e RADIO.
+        
+        CHECKED - Só se aplica a campos do tipo CHECKBOX e RADIO. Os campos cuja sintaxe de criação possui este parâmetro aparecerão marcados quando o formulário for aberto.
+        
+        SIZE="tamanho" - Define a quantidade de caracteres exibidos em campos do tipo TEXT ou PASSWORD. Este número delimita apenas o tamanho do campo para digitação, e não a quantidade de caracteres que o campo pode ter.
+        
+        MAXLENGTH="comprimento" - Define o número máximo de caracteres permitidos para variáveis do tipo TEXT ou PASSWORD.
+
+        ID="String de identicação" - Identifica o campo para permitir que seja criada uma tecla de atalho para ele.
+    -->
+
+    <!-- Sintaxe básica para campos do tipo TEXT: -->
+        <input TYPE="text" NAME="nome">
+    <!-- Sintaxe completa: -->
+        <input TYPE="text" NAME="nome" SIZE="tamanho" MAXLENGTH="comprimento" VALUE="valor">
+    <!-- Sintaxe básica para campos do tipo PASSWORD: -->
+        <input TYPE="password" NAME="nome">
+    <!-- Sintaxe completa: -->
+        <input TYPE="password" NAME="nome" SIZE="tamanho" MAXLENGTH="comprimento" VALUE="valor">
+    <!-- Sintaxe básica para campos do tipo RADIO: -->
+        <input TYPE="radio" NAME="nome" VALUE="valor">
+    <!-- Sintaxe completa: -->
+        <input TYPE="radio" NAME="nome" VALUE="valor" CHECKED>.
+    <!-- Sintaxe básica para campos do tipo CHECKBOX: -->
+        <input TYPE="checkbox" NAME="nome" VALUE="valor">
+    <!-- Sintaxe completa: -->
+        <input TYPE="radio" NAME="nome" VALUE="valor" CHECKED>
+    
+    <!--
+        Marcador SELECT e OPTION
+        <SELECT> e </SELECT> - definem e exibem uma lista de itens que podem ser selecionados pelo usuário. Visualmente elas criam uma lista de seleção onde uma caixa é exibida com o valor padrão, e o clique em uma seta faz surgir uma lista de opções. Um ou mais itens podem ser selecionados.
+        
+        Parametros:
+        NAME="nome" - Especifica o nome da variável que receberá o conteúdo do campo.
+        SIZE="tamanho" - Especifica a quantidade de itens que será exibida de uma vez pela lista. Este parâmetro é opcional.
+        MULTIPLE - Indica que podem ser escolhidos vários itens da lista. É opcional.
+    -->
+    <!-- Sintaxe básica: -->
+        <select name="nome"> [Itens da lista] </select>
+    <!-- Sintaxe completa: -->
+        <select name="nome" size="tamanho" multiple> [Itens da lista] </select>
+    
+    <!--
+        Cada item da lista deve ser especificado pelo comando OPTION, cujos principais parâmetros são:
+           
+        VALUE="conteúdo" - Define o conteúdo que a variável correspondente receberá caso a opção seja selecionada.
+        SELECTED - Indica que a opção deve ser previamente marcada como selecionada.
+    -->
+    <!-- Sintaxe básica: -->
+        <option value="valor">
+    <!-- Sintaxe completa: -->
+        <option value="valor" SELECTED>
+    
+    <!--
+        Marcador TEXTAREA
+        <TEXTAREA> </TEXTAREA> -  definem uma caixa de digitação onde o usuário pode digitar livremente um texto. Esta caixa pode ser previamente preenchida com algum texto que deve ser especificado no local de `texto padrão'.
+
+        Parametros:
+        NAME="nome" - Especifica o nome da variável que receberá o conteúdo do campo.
+        ROWS="número" - Especifica a altura, ou seja, a quantidade de linhas que a caixa deve ter.
+        COLS="número" - Especifica a largura, ou seja, a quantidade de colunas que a caixa deve ter
+
+    -->
+
+    <!--
+        DICA DE PROGRAMADOR:
+        Através das tags <PRE> e </PRE> o programador pode incluir, em uma página, um texto que foi digitado num editor de textos qualquer, mantendo sua formatação original com marcas de tabulação, m de linha gerado pela tecla `Enter' e outros formatos.
+        
+        O principal parâmetro do comando PRE é o parâmetro WIDTH, que especifica, em caracteres, a largura da linha do texto.
+        
+        Sintaxe básica: <PRE> Texto </PRE>.
+        Sintaxe completa: <PRE WIDTH="largura"> Texto </PRE>.
+
+    -->
+</body>
+</html>

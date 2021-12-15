@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Utilização de Tag's para Formulário</title>
+</head>
+<body>
+    <center>
+        <H1>Ficha de Inscrição</H1>
+    </center>
+    <form>
+        Nome: <input type="text" name="nome">
+        <P>Sexo:
+        <input type="radio" name="sexo" value="m">Masculino
+        <input type="radio" name="sexo" value="f">Feminino
+        <P> Assinale abaixo os programas de computador que você domina:
+        <BR><input type="checkbox" name="prog" value="word"> Word
+        <BR><input type="checkbox" name="prog" value="excel"> Excel
+        <BR><input type="checkbox" name="prog" value="access"> Access
+        <BR><input type="checkbox" name="prog" value="powerpoint"> Power Point
+        
+        <p>Cargo:
+        <select name="cargo">
+            <option value="analista">Analista de Sistemas
+            <option value="gerente">Gerente
+            <option value="programador">Programador C
+            <option value="Webmaster">Webmaster
+        </SELECT>
+        </p>
+        <P>Por que deseja trabalhar em nossa empresa?
+            <BR><textarea rows="6" cols="40" name="porque">Mínimo de 3 linhas.</textarea>
+            
+        <P ALIGN=center> <input type="submit" value="Enviar"> <input type="reset" value="Apagar Campos"></P>
+    </form>
+        
+</body>
+</html>
