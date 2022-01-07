@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+   margin: 0;
+   padding: 0;
+   background-color: cadetblue;
+}
+
+div#cabecalho{
+   margin: o;
+   padding: 20px;
+   text-align: center;
+   background-color:black;
+}
+img#logo{
+   height: 100px;
+   width: 100px;
+}
+div#menu{
+   background-color: darkslategray;
+   height: 40px;
+   text-align: center;
+}
+a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+   vertical-align: middle;
+   color: floralwhite;
+}
+div#destaque{
+   height: 300px;
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: honeydew;
+   background-image: url(/image/borboleta.png);
+}
+
+h1#titulodestaque{
+   text-align: center;
+   background-color: indigo;
+}
+p#tdestaque{
+   text-align: justify;
+   margin: 10px;
+}

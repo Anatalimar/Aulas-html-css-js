@@ -1,0 +1,35 @@
+body{
+   margin: o;
+   padding: o;
+   background-color: coral;
+}
+
+div#quadro1{
+   height: 300px;
+   width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: crimson;
+   border: black solid 2px;
+}
+
+div#quadro2{
+   height: 200px;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: white;
+   border: black solid 2px;
+}
+
+h1#titulo1{
+   padding: 0;
+   margin: 0px;
+   text-align: center;
+}
+
+h1#titulo2{
+   padding: 0;
+   margin: 0px;
+   text-align: center;
+}
