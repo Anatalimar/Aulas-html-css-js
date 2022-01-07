@@ -7,27 +7,43 @@ body{
 }
 
 div#cabecalho{
-   margin: o;
-   padding: 20px;
+   margin: 0;
+   padding-top: 20px;
    text-align: center;
    background-color:black;
 }
 img#logo{
    height: 100px;
    width: 100px;
+   border-radius: 50px;
+}
+h1#nomesite{
+   color: chartreuse;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 20px;
+   padding-top: 5px;
 }
 div#menu{
    background-color: darkslategray;
    height: 40px;
-   text-align: center;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+p#itemmenu{
+   margin-left: auto;
+   margin-right: auto;
 }
 a{
    text-decoration: none;
    font-size: 20px;
    font-weight: bold;
    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
-   vertical-align: middle;
-   color: floralwhite;
+   color: floralwhite; 
+   padding: 8px;
+   margin: 0;
 }
 div#destaque{
    height: 300px;
@@ -35,14 +51,67 @@ div#destaque{
    margin-left: auto;
    margin-right: auto;
    background-color: honeydew;
-   background-image: url(/image/borboleta.png);
+   background-image: url(/image/tec_info.jpg);
+   background-size: cover;
+   border-radius: 10px 10px 0px 0px;
 }
 
 h1#titulodestaque{
    text-align: center;
-   background-color: indigo;
+   background-color: rgb(235, 156, 53);
+   border-radius: 10px 10px 0px 0px;
 }
 p#tdestaque{
    text-align: justify;
    margin: 10px;
+   font-weight: bold;
+   color: white;
+   background-color: black;
+   opacity: 0.7;
+}
+div#formulario{
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 70px;
+   width: 380px;
+   background-color: white;
+   padding: 10px;
+   text-align: center;
+   border-radius: 10px;
+}
+input#email{
+   width: 95%;
+   padding: 5px;
+   margin: 5px;
+}
+input#btn_receber{
+   width: 60%;
+   padding: 6px;
+   margin: 5px;
+   background-color: cadetblue;
+   border: none;
+   border-radius: 10px;
+   font-weight: bold;
+   color: blue;
+}
+input#btn_receber:hover{
+   background-color: darkorange;
+   color: darkred;
+}
+div#rodape{
+   margin-top: 20px;
+   padding: 5px;
+   text-align: center;
+   background-color:black;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+h2#titulorodape{
+   margin: 0;
+   padding: 0;
+}
+p#trodape{
+   margin: 0;
+   padding: 0;
 }
