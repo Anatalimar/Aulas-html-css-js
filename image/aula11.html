@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript - Operadores</title>
+</head>
+<body>
+   <!--
+      Operadores Aritiméticos
+         +  Adição
+         -  Subtração
+         *  Multiplicação
+         /  Divisão
+         %  Resto
+         ** Potencia
+   -->
+   <!--
+      Operadores de Atribuição
+         =  Recebe
+         += Recebe mais
+         -= Recebe menos
+         *= Recebe multiplicação
+         /= Recebe Divisão
+   -->
+   <!--
+      Operadores de Incremento(+) e Decremento(-)
+      variavel++  Incrementa após a variavel
+      ++variavel  Incrementa antes da variavel
+      variavel--  Decrementa após a variavel 
+      --variavel  Decrementa antes da variavel
+   -->
+
+   <!--Utilização dos Operadores-->
+   <h1>Calculadora Simples</h1>
+   <p>Primeiro Valor</p>
+   <input type="number" id="num1"> <br />
+   <p>Segundo Valor</p>
+   <input type="number" id="num2"> <br />
+   <br />
+   <button onclick="soma()">Adição</button>
+   <button onclick="subt()">Subtração</button>
+   <button onclick="mult()">Multiplicação</button>
+   <button onclick="divisao()">Divisão</button>
+   <br />
+   <h2>Resultado: <span></span> </h2>
+
+   <script>
+      var n1 = window.document.querySelector('#num1')
+      var n2 = window.document.querySelector("#num2")
+      var res = window.document.querySelector('span')
+
+      function soma(){
+         res.innerHTML = Number(n1.value) + Number(n2.value)
+      }
+
+      function subt(){
+         res.innerHTML = Number(n1.value) - Number(n2.value)
+      }
+
+      function mult(){
+         res.innerHTML = Number(n1.value) * Number(n2.value)
+      }
+
+      function divisao(){
+         res.innerHTML = Number(n1.value) / Number(n2.value)
+      }
+
+   </script>
+</body>
+</html>

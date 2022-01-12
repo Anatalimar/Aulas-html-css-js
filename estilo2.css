@@ -100,6 +100,7 @@ input#btn_receber{
 input#btn_receber:hover{
    background-color: darkorange;
    color: darkred;
+   cursor: pointer;
 }
 div#rodape{
    margin-top: 20px;
