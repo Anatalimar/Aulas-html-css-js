@@ -59,13 +59,13 @@
          mensagem = "Os 3 são iguais"
       }
       else if ((num1.value >= num2.value) && (num1.value >= num3.value)){
-         mensagem = "1º Número é o maior"
+         mensagem = `Número ${num1.value} é o maior`
       }
       else if ((num2.value >= num1.value) && (num2.value >= num3.value)){
-         mensagem = "2º Número é o maior"
+         mensagem = `Número ${num2.value} é o maior`
       }
       else{
-         mensagem = "3º Número é o maior"
+         mensagem = `Número ${num3.value} é o maior`
       }
 
       msg.innerHTML = mensagem
