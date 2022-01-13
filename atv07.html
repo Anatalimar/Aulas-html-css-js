@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +13,17 @@
       var tpar = 0
       var numPares = ""
       var numImpares = ""
+      var n = 1
+      var num1 = 0
 
-      var num1 = Number(window.prompt("Informe um numero"))
-      verifica = num1 % 2
-      verifica == 0 ? tpar++ : timpar++
-      verifica == 0 ? numPares += num1 + " - " : numImpares += num1 + " - "
+      while(n <= 10){
+         num1 = Number(window.prompt("Informe um numero"))
+         verifica = num1 % 2
+         verifica == 0 ? tpar++ : timpar++
+         verifica == 0 ? numPares += num1 + " - " : numImpares += num1 + " - "
+         n++
+      }
       
-      
-
       document.write(`Números Pares: ${numPares} Total: ${tpar} <br />`)
       document.write(`Números Impares: ${numImpares} Total: ${timpar}`)
 

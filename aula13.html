@@ -38,7 +38,7 @@
             bloco de comandos
         }
     -->
-    <div id="area" onclick="clique()" onmouseenter="entrar()" onmouseout="sair()">interação...</div>
+    <div id="area">interação...</div>
 
     <script>
         var acao = document.getElementById('area')
@@ -58,17 +58,10 @@
             acao.style.background = 'red'
         }
 
-
-
-
-
-
-
-
-
-
-
-        
+        acao.addEventListener('click', clique)
+        acao.addEventListener('mouseenter', entrar)
+        acao.addEventListener('mouseout', sair)  
+             
         /* APLICAR EVENTO COM JAVASCRIPT
 
         acao.addEventListener('click', clique)
