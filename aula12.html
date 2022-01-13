@@ -33,12 +33,16 @@
 
     -->
     
-    <h1>Utilizando DOM</h1>
-    <p>Seleção de objetos com uso de <strong>DOM</strong> nos códigos</p>
-    <p>Local da mensagem</p>
+    <h1 class="minhaclasse">Utilizando DOM</h1>
+    <p id="meup">Seleção de objetos com uso de <strong>DOM</strong> nos códigos</p>
+    <p name="meup2">Local da mensagem</p>
 
     <script>
-        
+       var valor = document.getElementsByTagName('h1')
+       var valor2 = document.getElementById('p#meup')
+       var valor3 = document.getElementsByName('meup2')
+       var valor4 = document.getElementsByClassName('minhaclasse')
+       var valor5 = document.querySelector('meup')
     </script>
 </body>
 </html>

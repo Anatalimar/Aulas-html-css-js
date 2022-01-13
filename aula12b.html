@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Utilizando if - else if - else</title>
+</head>
+<body>
+   <!--
+      Estrutura de Condição If, Else If e Else
+
+      Sintaxe Simples:
+         if (condição){
+            True
+         }
+         else{
+            False
+         }
+      
+      Sintaxe Composta
+         if (condição){
+            True
+         }
+         else if(condição){
+            True
+         }
+         else{
+            False
+         }
+
+         while(condição){
+
+         }
+   -->
+
+   <h1> Informe sua altura</h1>
+   <input type="number" id="num">
+   <br/> <br/>
+   <button onclick="verifica()">Verificar</button>
+   <br />
+   <h2>Resultado: <span></span></h2>
+   
+   <script>
+      var num = window.document.querySelector('#num')
+      var res = window.document.querySelector('span')
+
+      function verifica(){
+         if(Number(num.value) >= 175){
+            res.innerHTML = "Altura acima da média nacional"
+         }
+         else{
+            res.innerHTML = "Altura abaixo da média nacional"
+         }
+
+         var numero = 1
+         while(numero <= 10){
+            document.write(numero)
+            numero++
+         }
+
+      }
+   </script>
+</body>
+</html>
