@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuando sobre Eventos</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            height: 200px;
+            width: 200px;
+            background-color: grey;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        EVENTOS DE MOUSE
+
+        1 - mouseenter (Quando entrar no elemento)
+        2 - mousemove - (Moveno o mouse sobre o elemento)
+        3 - mousedown - (Quando clicar e segurar o botão do mouse)
+        4 - mouseup - (Quando soltar o botão do mouse)
+        5 - click - (Quando clicar com o botão do mouse)
+        6 - mouseout - (Quando sair do elemento)
+
+        Saiba mais sobre Eventos: https://developer.mozilla.org/pt-BR/docs/Web/Events
+    -->
+
+    <!--
+        FUNÇÕES
+
+        Sintaxe:
+        function nomeDaFunção(Parametros){
+            bloco de comandos
+        }
+    -->
+    <div id="area" onclick="clique()" onmouseenter="entrar()" onmouseout="sair()">interação...</div>
+
+    <script>
+        var acao = document.getElementById('area')
+
+        function clique(){
+            acao.innerText = "Cliquei"
+            acao.style.background = 'gray'
+        }
+
+        function entrar(){
+            acao.innerText = "Entrei"
+            acao.style.background = 'green'
+        }
+
+        function sair(){
+            acao.innerText = "Sair"
+            acao.style.background = 'red'
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+        /* APLICAR EVENTO COM JAVASCRIPT
+
+        acao.addEventListener('click', clique)
+        acao.addEventListener('mouseenter', entrar)
+        acao.addEventListener('mouseout', sair)
+
+        */
+
+    </script>
+</body>
+</html>
