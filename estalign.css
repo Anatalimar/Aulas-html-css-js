@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+body{
+    max-width: 70em;
+    margin: 2em auto;
+    font: normal 18pt Arial;
+}
+main{
+    text-align: center;
+}
+.area{
+    background-color: tomato;
+    height: 80vh;
+    position: relative;
+}
+.elemento{
+    position: absolute;
+    background-color: turquoise;
+    height: 400px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    line-height: 400px;
+}
+/*
+.elemento{
+    position: absolute;
+    background-color: turquoise;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
