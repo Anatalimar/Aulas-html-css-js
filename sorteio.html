@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sorteio de Projetos</title>
+</head>
+<body>
+   <style>
+      body{
+         font: normal 20pt Arial;
+      }
+      div{
+         position: absolute;
+         height: 300px;
+         width: 300px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         background-color: burlywood;
+         border-radius: 30px;
+         text-align: center;
+         line-height: 300px;
+      }
+      button{
+         font: normal 16pt Arial;
+         position: absolute;
+         height: 40px;
+         width: 100px;
+         left: 0;
+         right: 0;
+         margin: auto;
+         top: 75%;
+      }
+      span{
+         font-size: 70pt;
+      }
+   </style>
+   <div>
+      <span></span>
+   </div>
+   <button onclick="sorteio(1,6)">Sortear</button>
+
+   <script>
+      var num = document.querySelector('span')
+
+      function sorteio(min, max){
+         min = Math.ceil(min);
+         max = Math.floor(max);
+         num.innerText = Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+   </script>
+</body>
+</html>

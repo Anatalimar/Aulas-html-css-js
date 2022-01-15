@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+   margin: 0;
+   padding: 0;
+   font: normal 18pt Arial;
+}
+
+main{
+   width: 20em;
+   background-color: coral;
+   height: 80vh;
+   text-align: center;
+   position: relative;
+}
+.area{
+   background-color:violet;
+   height: 200px;
+   width: 300px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
+   margin: auto;
+
+}
+.elemento{
+   position: absolute;
+   background-color: yellow;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
