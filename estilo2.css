@@ -4,6 +4,8 @@ body{
    margin: 0;
    padding: 0;
    background-color: cadetblue;
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 div#cabecalho{

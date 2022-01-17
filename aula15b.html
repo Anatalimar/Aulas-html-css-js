@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilização do Ifram</title>
+    <link rel="stylesheet" href="estmenu.css">
+
+    
+</head>
+<body>
+    <!--
+        IFRAME
+        - Tag utilizada para definir um quadro embutido.
+        - O quadro embutido é usado para incorporar outro documento no documento HTML atual.
+    -->
+    <div id="area_menu">
+        <ul id="menu">
+            <li id="home">Home</li>
+            <li id="pag1">Página 1</li>
+            <li id="pag2">página 2</li>
+            <li>Página 3</li>
+        </ul>
+    </div>
+    <div id="visor">
+        <iframe id="pagina" src=""></iframe>
+    </div>
+
+    <script>
+        var pagina = window.document.querySelector('#home')
+        var pagLink = document.querySelector('iframe')
+
+        function clique_menu(){
+            if(pagina.innerText == "Home"){
+                pagina.innerHTML = "Acertei"
+                pagLink.src="aula09.html"
+            }
+        }
+
+        pagina.addEventListener('click', clique_menu)
+        
+    </script>
+</body>
+</html>
