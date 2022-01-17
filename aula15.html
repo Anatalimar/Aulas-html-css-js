@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Médidas</title>
+</head>
+
+<body>
+    <!--
+        ABSOLUTAS
+        - Pixel (px)
+        - Inches (in) - Polegada
+        - Centimeters (cm)
+        - Points (pt)
+        - Picas (pc)
+
+        RELATIVAS
+        - Percentages (%)
+            * Depende das dimensões do elemento pai.
+
+        - Font-size (em/rem)
+            * em - Relativo ao font-size pai ou body
+              Ex: font-size * filho = 24px (padrã 16px)
+            * rem - relativo a font fixado no elemento root
+              Ex: root * rem
+
+        - Character-sizes (ex/ch)
+            * ex - utilizada a font-family como base para determinar a medida da fonte (relativo a altura -x da fonte "letras e minusculos")
+            * ch - baseado na largura do elemento 0.
+
+        - Viewport Dimensions (vw/vh)
+            Usa a largura e a altura do viewport ao invés do elemento pai.
+            - vh é igual a 1/100 da altura do viewport
+            - se altura do navegador é 900px -> 1vh = 9px.
+            - se largura do navegador eh 750px -> 1vw = 7.5vw
+
+        - Viewport Max (vmax) e Min (vmin)
+            Relacionada a largura e altura do viewport (máxima e mínima)
+            * vmax = 1/100 do valor máximo entre a altura e a largura máxima da janela
+            * vmin = 1/100 do valor mínimo entre a altura e a largura mínima da janela
+            - Se:
+                largura 800px;
+                altura 1080px
+                vmax = 10.8px
+                vmin = 8px
+    -->
+
+    <section id="pai">
+        <article id="filho"></article>
+        <article id="filho"></article>
+        <article id="filho"></article>
+        <article id="filho"></article>
+    </section>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #pai{
+            height: 400px;
+            width: 400px;
+            background-color: green;
+        }
+        #filho{
+            background-color: blue;
+            width: 25%;
+            height: 25%;
+            padding: 10px;
+            float: left;
+            box-sizing: border-box;
+        }
+        :root{
+            font-size: 16px;
+        }
+    </style>
+
+</body>
+</html>
