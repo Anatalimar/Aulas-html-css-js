@@ -17,39 +17,22 @@
     -->
     <div id="area_menu">
         <ul id="menu">
-            <li id="home" onclick="chama_link(pagina,'Home', 'aula09.html')">Home</li>
-            <li id="pag1" onclick="chama_link(pagina1,'Página 1', 'aula03.html')">Página 1</li>
+            <li id="home" onclick="chama_link('aula09.html')">Home</li>
+            <li id="pag1" onclick="chama_link('aula03.html')">Página 1</li>
             <li id="pag2">página 2</li>
             <li>Página 3</li>
         </ul>
-
-        <img src="image/borboleta.png" height="100px" width="100px" alt="" id="kevin" onclick="chama_link_img('aula05.html')">
     </div>
     <div id="visor">
-        <iframe id="pagina" src=""></iframe>
+        <iframe id="pagina" src="aula06.html"></iframe>
     </div>
-
     <script>
-        var pagina = window.document.querySelector('#home')
-        var pagina1 = window.document.querySelector('#pag1')
-        var pagina2 = window.document.querySelector('#pag2')
+        //Identificadores criados para gerar link
         var pagLink = document.querySelector('iframe')
-
-        function chama_link(nomeVar, nomeId, nlink){
-            if(nomeVar.innerText == nomeId){
-                pagLink.src = nlink
-            }
-        }
-        function chama_link_img(nlink){
+        function chama_link(nlink){
             pagLink.src = nlink
-            window.document.write("cliquei na imagem")
         }
 
-        /*
-
-        pagina.addEventListener('click', chama_link(pagina,"Home", "aula09.html"))
-        pagina1.addEventListener('click', chama_link(pagina1,"Página 1", "aula03.html"))
-        */
     </script>
 </body>
 </html>

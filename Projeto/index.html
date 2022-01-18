@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilização do Ifram</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+<body>
+    <div id="cabecalho">
+        <img id="logo" src="logo.png">
+        <h1 id="tlogo">Site do Professor Anatalimar</h1>
+    </div>
+    <div id="area_menu">
+        <ul id="menu">
+            <li id="home" onclick="chama_link('destaque.html')">Home</li>
+            <li id="pag1" onclick="chama_link('aula03.html')">Página 1</li>
+            <li id="pag2" onclick="chama_link('/aula09.html')">página 2</li>
+            <li>Página 3</li>
+        </ul>
+    </div>
+    <div id="visor">
+        <iframe id="pagina" src="destaque.html"></iframe>
+    </div>
+    <div id="rodape">
+        <p id="trodape">Centro de Ensino Técnico - CENTEC</p>
+        <p id="trodape">Curso Técnico em Informática</p>
+        <p id="trodape">Prof.: Anatalimar Mauricio de Lemos</p>
+    </div>
+    <script src="funcoes.js"></script>
+</body>
+</html>
