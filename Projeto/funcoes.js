@@ -131,7 +131,7 @@
 
     }
     /*Função para controlar visibilidade das divs */
-    function status_div_tbl(){
+    function status_div_tbl(){ //tabela unica com base Decima
         if(status_tbl == false){
             status_tbl == true
             atab.style.display = 'block'
@@ -139,7 +139,7 @@
             status_tg == false
         }
     }
-    function status_div_tg(){
+    function status_div_tg(){//tabela com todas as casas Decimais
         if(status_tg == false){
             status_tg == true
             atab.style.display = 'none'

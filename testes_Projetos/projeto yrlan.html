@@ -1,0 +1,102 @@
+<!DOCTYPE html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Projeto Yrlan</title>
+<link rel="stylesheet" href="projetoyrlan.css">
+<body>
+<div id="cabecalho">
+<h1 id="titulomain"> GALERIA DA SALA</h1><caption id="by">by Yrlan</caption>
+</div>
+<div id="main">
+
+	<div id="img" onclick="exibi_main2('IMAGENSPROJETO/foto1.jpg')">
+		
+			<img src="IMAGENSPROJETO/foto1.jpg" id="foto"><h1 id="titulo">Samuel dormindo</h1>
+	</div>
+	
+	<div id="img">
+	
+			<img src="IMAGENSPROJETO/foto2.jpg" id="foto"><h1 id="titulo">Gustavo Focado</h1>
+	</div>
+	
+	<div id="img">
+	
+	<img src="IMAGENSPROJETO/foto3.jpg" id="foto"><h1 id="titulo">Eduardo e turma </h1>
+
+	</div>
+	
+	
+	<div id="img">
+	
+	<img src="IMAGENSPROJETO/foto4.jpg" id="foto"><h1 id="titulo">Zelia focada</h1>
+
+	</div>
+	
+	
+	<div id="img">
+	
+	<img src="IMAGENSPROJETO/foto5.jpg" id="foto"><h1 id="titulo">Prof focado</h1>
+	
+	</div>
+	
+	<div id="img">
+	
+	<img src="IMAGENSPROJETO/foto6.jpg" id="foto"><h1 id="titulo">Prof explicando</h1>
+
+	</div>
+	
+	<div id="img">
+	
+	<img src="IMAGENSPROJETO/foto7.jpg" id="foto"> <h1 id="titulo">Rômulo no estresse</h1>
+	</div>
+	
+	
+	
+</div>
+
+<div id="main2">
+	
+	<img src="" id="img_destaque">
+
+	<button onclick="exibi_main()">Voltar</button>
+
+
+</div>
+
+
+<script>
+
+	var mae = false
+	var filho = false
+	
+	var div_main = document.getElementById('main')
+	var div_main2 = document.getElementById('main2')
+	var idestaque = document.getElementById('img_destaque')
+
+	
+	function exibi_main(){ 
+		if(mae== false){
+			mae == true
+			div_main.style.display = 'block' 
+			div_main2.style.display = 'none'
+			filho = false
+		}
+	}
+
+	function exibi_main2(foto){
+		if(filho==false){
+			filho == true
+			div_main.style. display = 'none'
+			div_main2.style. display = 'block'
+			mae = false
+
+			idestaque.src = foto
+		}
+	}
+
+</script>
+
+</body>
+</html>
