@@ -8,29 +8,29 @@
    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-   <script src="funcoes.js"></script>
    <div id="area_opcao">
       <h1>Gerar Tabuada por Casa Decimal</h1>
       <input type="number" id="num" placeholder="Casa decimal">
-      <input type="radio" id="operacao" name="operacao" value="+" checked>
+      <input type="radio" id="opera" name="opera" value="+">
       <label>Adição</label>
-      <input type="radio" id="operacao" name="operacao" value="+">
+      <input type="radio" id="opera" name="opera" value="-">
       <label>Subtração</label>
-      <input type="radio" id="operacao" name="operacao" value="+">
+      <input type="radio" id="opera" name="opera" value="x">
       <label>Multiplicação</label>
-      <input type="radio" id="operacao" name="operacao" value="+">
+      <input type="radio" id="opera" name="opera" value="/">
       <label>Divisão</label>
-      <button onclick="gerarTabuada(5, '+')">Gerar</button>
+      <button id="btn_gera" onclick="gerarTabuada()">Gerar</button>
+      
    </div>
    <div id="area_opcao2">
       <h1>Gerar Tabela por Operador</h1>
-      <button id="btn_op">Adição</button>
-      <button id="btn_op">Subtração</button>
-      <button id="btn_op">Multiplicação</button>
-      <button id="btn_op">Divisão</button>
-   </div>
+      <button id="btn_op" onclick="gerarTabuadaOp('+')">Adição</button>
+      <button id="btn_op" onclick="gerarTabuadaOp('-')">Subtração</button>
+      <button id="btn_op" onclick="gerarTabuadaOp('x')">Multiplicação</button>
+      <button id="btn_op" onclick="gerarTabuadaOp('/')">Divisão</button>
    </div>
    <div id="tabuada">
+      <h3 id="tres"></h3>
       <div id="resultado"></div>
    </div>
    <div id="tab_geral">
@@ -43,11 +43,11 @@
             <td id="tcoluna">Tabuada do 5</td>
          </tr>
          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="t01"></td>
+            <td id="t02"></td>
+            <td id="t03"></td>
+            <td id="t04"></td>
+            <td id="t05"></td>
          </tr>
          <tr>
             <td id="tcoluna">Tabuada do 6</td>
@@ -57,13 +57,14 @@
             <td id="tcoluna">Tabuada do 10</td>
          </tr>
          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="t06"></td>
+            <td id="t07"></td>
+            <td id="t08"></td>
+            <td id="t09"></td>
+            <td id="t10"></td>
          </tr>
       </table>
    </div>
+   <script src="funcoes.js"></script>
 </body>
 </html>

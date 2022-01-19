@@ -247,7 +247,7 @@ Configurações da página Projeto Tabuada
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: blue;
+    background-color: rgb(176, 176, 226);
     text-align: center;
     font: normal 18px Arial;
     font-weight: bold;
@@ -257,6 +257,90 @@ Configurações da página Projeto Tabuada
 }
 #num{
     height: 20px;
+    width: 120px;
+    font-size: 18px;
+    border: 1px solid rgb(86, 86, 194);
+    border-radius: 5px;
+}
+#btn_gera{
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(86, 86, 194);
+    cursor: pointer;
+}
+#area_opcao2{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(176, 176, 226);
+    text-align: center;
+    font: normal 18px Arial;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px; 
+    margin-top: 20px;
+}
+#btn_op{
+    height: 30px;
     width: 125px;
     font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(86, 86, 194);
+    cursor: pointer;
+    font-weight: bold;
+}
+#tabuada{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(235, 213, 207);
+    font: normal 18px Arial;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px; 
+    margin-top: 20px;
+    display: none;
+}
+#tres{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#resultado{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+#tab_geral{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+#tabela_tab{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td{
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+    font-weight: bold;
+    border: 3px solid cadetblue;
+}
+#tcoluna{
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(231, 104, 81);
+    color: white;
 }
