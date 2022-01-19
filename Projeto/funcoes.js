@@ -32,3 +32,26 @@
             alert("Há questões sem respostas. Verifique suas respostas.")
         }
     }
+//Função para gerar a tabuada
+    function gerarTabuada(n, op){
+        if(op == '+'){
+            for(i = 1; i <= 10; i++){
+                document.write(`${n} ${op} ${i} = ` + (Number(n)+i)+"<br>")
+            }
+        }
+        else if(op == '-'){
+            for(i = 1; i <= 10; i++){
+                document.write(`${n} ${op} ${i} = ` + (Number(n)-i)+"<br>")
+            }
+        }
+        else if(op == 'x'){
+            for(i = 1; i <= 10; i++){
+                document.write(`${n} ${op} ${i} = ` + (Number(n)*i)+"<br>")
+            }
+        }
+        else{
+            for(i = 1; i <= 10; i++){
+                document.write(`${n} ${op} ${i} = ` + (Number(n)/i)+"<br>")
+            }
+        }
+    }

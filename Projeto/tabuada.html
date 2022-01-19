@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gerador de Tabuada</title>
+   <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <script src="funcoes.js"></script>
+   <div id="area_opcao">
+      <h1>Gerar Tabuada por Casa Decimal</h1>
+      <input type="number" id="num" placeholder="Casa decimal">
+      <input type="radio" id="operacao" name="operacao" value="+" checked>
+      <label>Adição</label>
+      <input type="radio" id="operacao" name="operacao" value="+">
+      <label>Subtração</label>
+      <input type="radio" id="operacao" name="operacao" value="+">
+      <label>Multiplicação</label>
+      <input type="radio" id="operacao" name="operacao" value="+">
+      <label>Divisão</label>
+      <button onclick="gerarTabuada(5, '+')">Gerar</button>
+   </div>
+   <div id="area_opcao2">
+      <h1>Gerar Tabela por Operador</h1>
+      <button id="btn_op">Adição</button>
+      <button id="btn_op">Subtração</button>
+      <button id="btn_op">Multiplicação</button>
+      <button id="btn_op">Divisão</button>
+   </div>
+   </div>
+   <div id="tabuada">
+      <div id="resultado"></div>
+   </div>
+   <div id="tab_geral">
+      <table id="tabela_tab">
+         <tr>
+            <td id="tcoluna">Tabuada do 1</td>
+            <td id="tcoluna">Tabuada do 2</td>
+            <td id="tcoluna">Tabuada do 3</td>
+            <td id="tcoluna">Tabuada do 4</td>
+            <td id="tcoluna">Tabuada do 5</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td id="tcoluna">Tabuada do 6</td>
+            <td id="tcoluna">Tabuada do 7</td>
+            <td id="tcoluna">Tabuada do 8</td>
+            <td id="tcoluna">Tabuada do 9</td>
+            <td id="tcoluna">Tabuada do 10</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>
