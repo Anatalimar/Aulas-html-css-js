@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <style>
+        #tit{
+            font-family: fantasy;
+            font-size: 4em;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            color: rgb(22, 24, 109);
+        }
+        #escolha{
+            width: 600px;
+            height: 130px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font: normal 16px Arial;
+            background-color: cornflowerblue;
+            border-radius: 20px;
+            text-align: center;
+        }
+        #btn{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        #arean{
+            position: relative;
+        }
+        #nome_btn{
+            display: inline-block;
+            width: 100px;
+        }
+        #disputa{
+            width: 600px;
+            background-color: darkmagenta;
+            margin-top: 15px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: none;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #resultado{
+            width: 600px;
+            background-color: cornflowerblue;
+            margin-top: 15px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            display: none;
+        }
+        #tres{
+            font-size: 38px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="tit">Jo-Ken-Pô</h1>
+    <div id="escolha">
+        <input id="btn" type="image" src="pedra.png" onclick="duelo(1)">
+        <input id="btn" type="image" src="papel.png" onclick="duelo(2)">
+        <input id="btn" type="image" src="tesoura.png" onclick="duelo(3)"><br>
+        <div id="arean">
+            <div id="nome_btn"><label>Pedra</label></div>
+            <div id="nome_btn"><label>Papel</label></div>
+            <div id="nome_btn"><label>Tesoura</label></div>
+        </div>
+    </div>
+    <div id="disputa">
+        <img id="jogador" src="">
+        <img id="verso" src="verso.png">
+        <img id="pc" src="">
+    </div>
+    <div id="resultado">
+        <h2 id="tres"></h2>
+    </div>
+    <script>
+        var res = window.document.querySelector('h2')
+        var ij = window.document.getElementById('jogador')
+        var ic = window.document.getElementById('pc')
+        var div_d = window.document.getElementById('disputa')
+        var div_r = window.document.getElementById('resultado')
+        var num = 0
+        var npc = 0
+
+        function escpc(min, max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function duelo(nj){
+            ctrl_div()
+            npc = escpc(1,3)
+
+            if((nj == 1) && (npc == 1)){
+                res.innerHTML = "Empate"
+                ij.src = 'pedra.png'
+                ic.src = 'pedra.png'
+            }
+            else if((nj == 1) && (npc == 2)){
+                res.innerHTML = "Vitória do Computador"
+                ij.src = 'pedra.png'
+                ic.src = 'papel.png'
+            }
+            else if((nj == 1) && (npc == 3)){
+                res.innerHTML = "Vitória do Jogador"
+                ij.src = 'pedra.png'
+                ic.src = 'tesoura.png'
+            }
+            else if((nj == 2) && (npc == 1)){
+                res.innerHTML = "Vitória do Jogador"
+                ij.src = 'papel.png'
+                ic.src = 'pedra.png'
+            }
+            else if((nj == 2) && (npc == 2)){
+                res.innerHTML = "Empate"
+                ij.src = 'papel.png'
+                ic.src = 'papel.png'
+            }
+            else if((nj == 2) && (npc == 3)){
+                res.innerHTML = "Vitória do Computador"
+                ij.src = 'papel.png'
+                ic.src = 'tesoura.png'
+            }
+            else if((nj == 3) && (npc == 1)){
+                res.innerHTML = "Vitória do Computador"
+                ij.src = 'tesoura.png'
+                ic.src = 'pedra.png'
+            }
+            else if((nj == 3) && (npc == 2)){
+                res.innerHTML = "Vitória do Jogador"
+                ij.src = 'tesoura.png'
+                ic.src = 'papel.png'
+            }
+            else{
+                res.innerHTML = "Empate"
+                ij.src = 'tesoura.png'
+                ic.src = 'tesoura.png'
+            }
+
+        }
+        var status = 0
+        function ctrl_div(){
+            if(status == 0){
+                div_d.style.display = 'block'
+                div_r.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>
