@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body{
+   margin: 0;
+   padding: 0;
+}
+#titulo{
+   text-align: center;
+   font: 28pt Arial;
+   font-weight: bold;
+}
+#painel_bingo{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+#bolas{
+   background-color: rgb(58, 92, 165);
+   border: 1px solid rgb(0, 0, 0);
+   padding: 10px;
+   width: 700px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+   cursor: pointer;
+}
+button{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   font: 18pt Arial;
+   font-weight: bold;
+   background-color: #ffffff;
+}
+#sorteio{
+   width: 300px;
+   height: 320px;
+   background-color: rgb(41, 38, 202);
+   margin: 10px;
+   border-radius: 5%;
+}
+#numero{
+   width: 250px;
+   height: 200px;
+   background-color: #fff;
+   border-radius: 5%;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font: 100pt Arial;
+   font-weight: bold;
+   line-height: 200px;
+   color: red;
+}
+#btn{
+
+   width: 250px;
+   height: 60px;
+   margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 10%;
+   text-align: center;
+}
+#sortear{
+   width: 200px;
+   height: 50px;
+   border-radius: 4%;
+   margin-top: 5px;
+   font-weight: bold;
+}
+#questoes{
+   background-color: rgb(58, 92, 165);
+   width: 1020px;
+   padding: 3px 10px 3px 10px; 
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 10px;
+}
+section{
+   background-color: orange;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   border: 2px solid white;
+   padding: 0px 10px 0 10px;
+   border-radius: 10px;
+   margin: 7px 0px 7px 0px;
+   display: none;
+}
